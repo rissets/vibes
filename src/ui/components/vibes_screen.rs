@@ -75,7 +75,7 @@ fn render_mood_panel(f: &mut Frame, area: Rect, state: &AppState) {
             .borders(Borders::ALL)
             .border_type(BorderType::Rounded)
             .border_style(border_style(true))
-            .style(normal_style().bg(BG_ALT)),
+            .style(normal_style()),
     );
     f.render_widget(mood_list, cols[0]);
 
@@ -109,7 +109,7 @@ fn render_mood_panel(f: &mut Frame, area: Rect, state: &AppState) {
                 .borders(Borders::ALL)
                 .border_type(BorderType::Rounded)
                 .border_style(border_style(false))
-                .style(normal_style().bg(BG_ALT)),
+                .style(normal_style()),
         )
         .alignment(Alignment::Center);
     f.render_widget(eq_block, cols[1]);

@@ -84,7 +84,7 @@ fn render_auth_overlay(f: &mut Frame, area: Rect, state: &AppState) {
         .borders(Borders::ALL)
         .border_type(BorderType::Double)
         .border_style(border_style(true))
-        .style(normal_style().bg(BG_ALT));
+        .style(normal_style());
 
     let inner = block.inner(popup);
     f.render_widget(block, popup);

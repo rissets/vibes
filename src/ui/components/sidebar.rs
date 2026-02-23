@@ -23,7 +23,7 @@ pub fn render_sidebar(f: &mut Frame, area: Rect, state: &AppState) {
         .borders(Borders::ALL)
         .border_type(BorderType::Rounded)
         .border_style(border_style(false))
-        .style(normal_style().bg(BG_ALT));
+        .style(normal_style());
 
     let inner = block.inner(area);
     f.render_widget(block, area);

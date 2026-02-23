@@ -24,8 +24,8 @@ pub fn render_search(f: &mut Frame, area: Rect, state: &AppState) {
         .title(Span::styled(" 󰍉 Search Spotify ", title_style()))
         .borders(Borders::ALL)
         .border_type(BorderType::Rounded)
-        .border_style(border_style(input_focused))
-        .style(normal_style().bg(BG_ALT));
+        .border_style(border_style(false))
+        .style(normal_style());
 
     let input_text = Paragraph::new(Line::from(vec![
         Span::styled(" ", muted_style()),

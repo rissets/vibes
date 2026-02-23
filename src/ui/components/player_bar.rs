@@ -41,7 +41,7 @@ pub fn render_player_bar(f: &mut Frame, area: Rect, state: &AppState) {
         .borders(Borders::ALL)
         .border_type(BorderType::Rounded)
         .border_style(border_style(true))
-        .style(normal_style().bg(BG_ALT));
+        .style(normal_style());
 
     let inner = block.inner(area);
     f.render_widget(block, area);

@@ -2,7 +2,6 @@ use ratatui::style::{Color, Modifier, Style};
 
 // ─── Color Palette ───────────────────────────────────────────────────────────
 pub const BG:          Color = Color::Rgb(13,  13,  17);
-pub const BG_ALT:      Color = Color::Rgb(20,  20,  28);
 pub const SURFACE:     Color = Color::Rgb(28,  28,  40);
 pub const SURFACE_SEL: Color = Color::Rgb(40,  35,  65);
 
@@ -38,7 +37,7 @@ pub fn selected_style() -> Style {
 }
 
 pub fn normal_style() -> Style {
-    Style::default().fg(TEXT).bg(BG)
+    Style::default().fg(TEXT)
 }
 
 pub fn dim_style() -> Style {
